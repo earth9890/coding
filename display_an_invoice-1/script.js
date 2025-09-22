@@ -1,14 +1,14 @@
 
-document.addEventListener('DOMContentLoade', function() {
-    fetc('/api/invoice')
-        .then(resp => resp.jsoon())
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('/api/invoice')
+        .then(resp => resp.json())
         .then(data => {
             let html = '<ul>';
             data.items.forEach(item => {
-                html += `<li>${item.name} - $${item.prce}</li>`;
+                html += `<li>${item.name} - $${item.price}</li>`;
             });
             html += '</ul>';
             document.getElementById('invoice-container').innerHTML = html;
         })
-        .catch(er => console.eror("Failed to load invoice:", er));
+        .catch(err => console.error("Failed to load invoice:", err));
 });
