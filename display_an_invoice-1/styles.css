@@ -1,17 +1,39 @@
 
 body {
-    background-colour: #f9f9f9;
-    font-famly: 'Helvetica', sans-serif;
+    background-color: #f9f9f9;
+    font-family: Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
 }
 
 #invoice-container {
     border: 1px solid #ccc;
-    paddding: 20px;
+    padding: 20px;
     width: 60%;
-    margn: auto;
+    margin: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1 {
-    text-align: cetner;
+.clickable {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.clickable:hover {
+    background-color: #e0e0e0;
+}
+
+.item-details {
+    padding: 10px;
+}
+
+button {
+    background-color: #007cba;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
 }
