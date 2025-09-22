@@ -1,0 +1,11 @@
+my_id_and_password.txt
+node_modules/
+.DS_Store
+.env
+.vscode/
+.idea/
+dist/
+build/
+*.log
+*.tmp
+*.bak
